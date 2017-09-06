@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<title>
+			BEST BUY TUTORIAL
+		</title
+		
+		<!-- include the jquery css and javascript we need (load them from google urls) -->
+		<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+	 	<script>
+  			
+			$(document).ready(function(){
+    				$('#state').focus();
+    				$('#state').autocomplete({
+      					source: "/sample.php"
+    				});
+			});
+	  	</script>
+		<style>
+			body{
+					background:#1da1f2;
+				}
+				h1{
+					color:#ffffff;
+					text-align:center;
+					margin-top:5%;
+				}
+				#container{
+					background:white;
+					margin-top:5%;
+					height:40%;
+					width:40%;
+					margin-left:30%;
+					position:absolute;
+					box-shadow:1px 1px 0px 0px grey;
+				}
+				#container h2{
+					color:#1da1f2;
+					text-align:center;
+					margin-top:10%;
+					
+				}
+				#container input{
+					width:40%;
+					height:13%;
+					padding:2%;
+					margin-top:5%;
+					margin-left:30%;
+					border:2px solid #1da1f2;
+					border-radius:5px;
+					box-shadow:1px 1px 0px 0px lightgrey;
+				}
+				#container input:focus{
+					 outline-width: 0;
+				}
+				::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+				  color: grey;
+				}
+		</style>
+	</head>
+	<body>
+
+			<h1>PHP BEST BUY API TUTORIAL</h1>
+			<div id="container">
+				<h2>EXPLORE BEST BUY CATALOG</h2>
+				<form method="GET">
+					<input id="state" type="text" name="searchString" placeholder="Please enter search string"  onfocus="this.placeholder = ''">
+				</form>
+			</div>
+	</body>
+	
+</html>

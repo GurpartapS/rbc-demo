@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>
+			BEST BUY TUTORIAL
+		</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+			<h1>PHP BEST BUY API TUTORIAL</h1>
+			<div id="container">
+				<h2>EXPLORE BEST BUY CATALOG</h2>
+				<form>
+					<input type="text" name="searchString" placeholder="Please enter search string"  onfocus="this.placeholder = ''">
+				</form>
+			</div>
+	</body>
+	
+</html>

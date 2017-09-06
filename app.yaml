@@ -1,0 +1,13 @@
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /css
+  static_dir: css
+    
+- url: /
+  script: bestbuy.html
+
+- url: /*.*
+  script: sample.php
+  
